@@ -42,7 +42,7 @@ export const Hero = () => {
   }));
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden grid-bg noise">
+    <section ref={ref} className="relative min-h-screen flex items-center overflow-hidden w-full grid-bg noise">
       {/* Gradient Orbs */}
       <div className="orb w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] bg-accent/8 -top-32 -left-32" />
       <div className="orb w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-accent/5 bottom-0 right-0" />

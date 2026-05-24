@@ -23,9 +23,10 @@ function App() {
         {!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
       </AnimatePresence>
       {loaded && (
-        <div className="min-h-screen bg-bg">
+        /* overflow-x-hidden on the root wrapper is the key fix */
+        <div className="min-h-screen bg-bg overflow-x-hidden w-full">
           <Navbar />
-          <main>
+          <main className="overflow-x-hidden w-full">
             <Hero />
             <Dashboard />
             <Programs />
